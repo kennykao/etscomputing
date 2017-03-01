@@ -1,5 +1,4 @@
-<?php include 'db.php';?>
-<?php include 'schedule.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,55 +128,42 @@
     				<img class="img-circle" src="images/vlsb.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
     			</div>
     			<h3>VLSB 2180</h3>
+
     			<table class ="table_center table_wider">
     				<tr>
     					<td class = "padding_days dark_grey">Sunday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours_VLSB($week[0], 2)
-                        ?></td>
+                       </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Monday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours_VLSB($week[1], 2)
-                        ?></td>
+                       </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Tuesday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours_VLSB($week[2], 2)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Wednesday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours_VLSB($week[3], 2)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Thursday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours_VLSB($week[4], 2)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Friday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours_VLSB($week[5], 2)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Saturday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours($week[6], 2)
-                        ?></td>
+                       </td>
     				</tr>
     			</table>
     			<br>
@@ -192,61 +178,44 @@
     				<tr>
     					<td class = "padding_days dark_grey">Sunday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours($week[0], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Monday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours($week[1], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Tuesday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours($week[2], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Wednesday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours($week[3], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Thursday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours($week[4], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days">Friday</td>
     					<td class = "padding_hours">
-                        <?php
-                        echo getHours($week[5], 1)
-                        ?></td>
+                        </td>
     				</tr>
     				<tr>
     					<td class = "padding_days dark_grey">Saturday</td>
     					<td class = "padding_hours dark_grey">
-                        <?php
-                        echo getHours($week[6], 1)
-                        ?></td>
+                        </td>
     				</tr>
     			</table>
     			<br>
     			<p><a class="btn btn-default" href="https://www.ets.berkeley.edu/discover-services/drop-computer-facilities/hours-locations/1st-floor-moffitt" role="button">More info &raquo;</a></p>
     		</div><!-- /.col-lg-6 -->
         <center>
-        <div style="text-transform: uppercase; font-family: Montserrat; font-size: 10px;"><?php
-        echo "Hours for " .$sunday. " - " .$saturday."<br>";
-        ?></div>
-        <a style="font-family: Montserrat; font-size: 10px;" href="?date=<?=$prev_week;?>#hours_locations">PREVIOUS WEEK</a> | <a style="font-family: Montserrat; font-size: 10px;" href="?date=<?=$next_week;?>#hours_locations">NEXT WEEK</a>
+        <div style="text-transform: uppercase; font-family: Montserrat; font-size: 10px;"><</div>
         </center>
     	</div><!-- /.row -->
     </div>
