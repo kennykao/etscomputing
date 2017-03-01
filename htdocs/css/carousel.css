@@ -1,0 +1,636 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  position: relative;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+#navbar{
+  transition: .25s all linear;
+}
+
+.link_fade{
+  transition: .25s all linear;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+html, body {
+  height:100%;
+  margin:0;
+  padding:0;
+}
+.carousel, .item, .active {
+  height:100%;
+}
+.carousel-inner {
+  height:100%;
+}
+.carousel {
+  margin-bottom: 60px;
+}
+.carousel-caption {
+  z-index: 10;
+}
+.carousel .item {
+  background-color: #777;
+}
+.carousel .carousel-inner .bg {
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.carousel .carousel-inner .bg1 {
+  background-image:url("../images/cafestock5-compressor.jpg");
+  background-position: center top;
+}
+.carousel .carousel-inner .bg2 {
+  background-image:url("../images/wireless-compressor.jpg");
+  background-position: center bottom; 
+}
+.carousel .carousel-inner .bg3 {
+  background-image:url("../images/olivia_eric2-compressor.jpg");
+  background-position: center top; 
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+  /*width: 33.33333%;*/
+  /*float: left;*/
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* TABLES
+-------------------------------------------------- */
+
+/* Center align the table within the column */
+.table_center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+/* Padding for day cells */
+.padding_days{
+  padding: .5px 14px .5px 14px;
+}
+
+
+/* Padding for hour cells */
+.padding_hours{
+  padding: .5px 20px .5px 20px;
+  border-left: 5px solid white;
+}
+
+/* Background color for table cells */
+.dark_grey{
+  background-color: #dfdfdf;
+}
+
+/* Make table wider */
+.table_wider{
+  width: 230px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+/* ANCHORS
+-------------------------------------------------- */
+
+/* Offsets anchors to appropriate place */
+.anchor_offset {
+  padding-top: 111px;
+  margin-top: -111px;
+}
+
+.anchor_offset2 {
+  padding-top: 101px;
+  margin-top: -101px;
+}
+
+.anchor_offset4 {
+  padding-top: 75px;
+  margin-top: -101px;
+}
+
+.anchor_offset3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+/* IMAGE HOVER EFFECTS
+-------------------------------------------------- */
+
+/* Crossfade for Wheeler and WMF images */
+/*.bord{         
+  padding: 0;         
+  margin: 0;         
+  -webkit-box-sizing: border-box;          
+} 
+
+.crossfd_wheeler{         
+  background: url("../images/lsmf.jpg");         
+  display: inline-block;         
+  font-size: 0;
+  border-radius: 50%;         
+} 
+
+.crossfd_wheeler img{                  
+  -webkit-transition: opacity .35s ease-in-out;                  
+  -moz-transition: opacity .35s ease-in-out;                  
+  -o-transition: opacity .35s ease-in-out;                  
+  transition: opacity .35s ease-in-out;                     
+} 
+
+.crossfd_wheeler img:hover{                     
+  opacity: 0;                                
+} 
+*/
+/* Crossfade for VLSB and LSMF images */
+/*.crossfd_vlsb{         
+  background: url("../images/lsmf.jpg");         
+  display: inline-block;         
+  font-size: 0;
+  border-radius: 50%;             
+} 
+
+.crossfd_vlsb img{                  
+  -webkit-transition: opacity .35s ease-in-out;                  
+  -moz-transition: opacity .35s ease-in-out;                  
+  -o-transition: opacity .35s ease-in-out;                  
+  transition: opacity .35s ease-in-out;                     
+} 
+
+.crossfd_vlsb img:hover{                     
+  opacity: 0;                                
+} 
+*/
+/* Crossfade for Moffitt and MMF images */
+/*.crossfd_moffitt{         
+  background: url("http://ets.berkeley.edu/sites/default/files/imagecache/Preview/mmf_int_0.jpg");         
+  display: inline-block;         
+  font-size: 0;
+  border-radius: 50%;               
+} 
+
+.crossfd_moffitt img{                  
+  -webkit-transition: opacity .35s ease-in-out;                  
+  -moz-transition: opacity .35s ease-in-out;                  
+  -o-transition: opacity .35s ease-in-out;                  
+  transition: opacity .35s ease-in-out;                     
+} 
+
+.crossfd_moffitt img:hover{                     
+  opacity: 0;                                
+} */
+
+/* CHANGING FONTS
+-------------------------------------------------- */
+
+body,
+h1,
+h4,
+h5,
+h6,
+.h1,
+.h4,
+.h5,
+.h6 {
+    font-weight: 300;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light",  "Roboto", "Lato", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h2,
+h3,
+.h2,
+.h3{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* LOGO
+-------------------------------------------------- */
+
+#logo{
+  width: 100px;
+  margin-top: -5px;
+}
+
+/* BACKGROUND IMAGE
+-------------------------------------------------- */
+
+.hand_pic{
+  background: url('../images/olivia_dark-compressor.jpg');
+  /*background-size: 100% 100%;*/
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-position: center center;
+  /*background-repeat: no-repeat;*/
+}
+
+.hand_pic2{
+  background: url('../images/olivia_dark-compressor.jpg');
+  background-size: cover;
+  background-position: center top;
+  /*background-repeat: no-repeat;*/
+  background-clip: content-box;
+}
+
+/* FORMS
+-------------------------------------------------- */
+
+.form_short{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px #fff;
+  padding: 10px;
+  width: 90%;
+  color: #fff;
+}
+
+.form_long{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 1px #fff;
+  padding: 10px;
+  width: 90%;
+  height: 300px;
+  color: #fff;
+}
+
+.submit{
+  background: rgba(239, 194, 60, 0.3);
+  border: solid 1px rgba(239, 194, 60, 0.5);
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.hidden_success{
+  opacity:0;
+  transition:opacity 1s linear;
+}
+
+.show_success{
+  opacity:1;
+  transition:opacity 1s linear;
+}
+
+/* CUSTOM CSS FOR FORM
+-------------------------------------------------- */
+
+@media (max-width: 767px) { /*sm*/
+  .center_form{
+    margin: 0 auto;
+    width: 100%;
+    padding-right: 25px;
+  }
+
+   .text-down{
+    padding-top: 50px;
+  }
+
+  .text-pad-right{
+    padding-right: 23px;
+  }
+
+  .carousel-custom{
+  position: absolute;
+  right: 15%;
+  bottom: 80px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  /*width: 40%;*/
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .text-down{
+    margin-top: 100px;
+  } 
+}
+
+@media (min-width: 768px) { /*sm*/
+  .center_form{
+    padding-top: 35px;
+  }
+
+  .container_pad_left{
+    padding-left:20px;
+  }
+
+  .carousel-custom{
+  position: absolute;
+  right: 15%;
+  bottom: 80px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.image1{
+	left: 50%;
+	width: 40%;
+}
+@media (max-width: 1280px){
+	.image0{
+	left: 10%;
+	width: 38%;
+	/*bottom: 35%;*/
+  top: 22%;
+}
+}
+
+@media (min-width: 1281px){
+	.image0{
+	left: 10%;
+	width: 45%;
+	/*bottom: 35%;*/
+  top: 22%;
+}
+}
+
+.image2{
+	left: 10%;
+	width: 30%;
+	bottom: 43%;
+}
+}
+
+/* CUSTOM CSS FOR "OUR SERVICES"
+-------------------------------------------------- */
+
+.color_icon{
+  transition: fill .4s ease;
+}
+
+.color_icon:hover{
+  fill: #efc23c;
+}
+
+.nav_transparent{
+	background-color:rgba(248,248,248,.7);
+}
+
+/* CAROUSEL DESCRIPTION
+-------------------------------------------------- */
+
+.description {
+  padding: 20px;
+  background: rgb(34,34,34); 
+  background: rgba(34,34,34,0.75);
+/*  width: 65%;
+  margin-left: 420px;
+  margin-top: -100px;*/
+}
+
+.description1 {
+  padding: 20px;
+/*  width: 65%;
+  margin-left: 420px;
+  margin-top: -100px;*/
+}
+
+.description h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+}
+
+.description h3{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Roboto", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 100;
+  font-size: 20px;
+	margin-top: 0px;
+}
+
+@media (max-width: 495px){
+.description1 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+}
+
+.description1 h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 8px;
+	margin-top: 0px;
+}
+}
+
+@media (min-width: 496px) and (max-width: 768px){
+.description1 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+}
+
+.description1 h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	margin-top: 0px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 914px){
+.description1 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 39px;
+}
+
+.description1 h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	margin-top: 0px;
+}
+}
+
+@media (min-width: 915px) and (max-width: 1280px){
+.description1 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 50px;
+}
+
+.description1 h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	margin-top: 0px;
+}
+}
+
+@media (min-width: 1281px){
+.description1 h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 74px;
+}
+
+.description1 h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 37px;
+	margin-top: 0px;
+}
+}
+
+/**/
+
+@media (max-width: 495px){
+.logo1{
+	height: 50px;
+}
+}
+
+@media (min-width: 496px) and (max-width: 767px){
+.logo1{
+	height: 75px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 913px){
+.logo1{
+	height: 75px;
+}
+}
+
+@media (min-width: 914px) and (max-width: 1280px){
+.logo1{
+	height: 95px;
+}
+}
+
+@media (min-width: 1281px){
+.logo1{
+	height: 170px;
+}
+}
+/* ICON CUSTOM CSS
+-------------------------------------------------- */
+
+@media (max-width: 540px){
+.icon_spacing{
+	margin-left: 0px !important;
+}
+}
+
+
+/* ANIMATIONS 
+----------------------------------------------------*/
+
+.wp1, .wp2, .wp3, .wp3-1, .wp3-2, .wp3-3, .wp3-4, .wp3-5, .wp3-6,.wp4, .wp5, .wp6, .wp7 { visibility: hidden; }
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn { visibility: visible; }
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+
+.delay-02s { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
+.delay-04s { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; }
+.delay-06s { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+.delay-08s { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; }
+
+/* STUFF */
+.navbar-default .navbar-nav>.active>a{
+  background-color: rgba(0,0,0,.1) !important;
+}
